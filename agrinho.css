@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', sans-serif;
+    background:#f6fbf6;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Banner */
+
+.banner{
+    height:80vh;
+    background:linear-gradient(
+    rgba(0,80,0,.7),
+    rgba(0,100,0,.6)),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.banner-conteudo{
+    color:white;
+}
+
+.banner h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:1.5rem;
+}
+
+/* Menu */
+
+nav{
+    background:#1b5e20;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    list-style:none;
+}
+
+nav li{
+    margin:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#a5d6a7;
+}
+
+/* Conteúdo */
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    background:white;
+    margin:40px 0;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:#e8f5e9;
+    padding:20px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* Tecnologias */
+
+.tecnologias{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.tec{
+    flex:1;
+    min-width:250px;
+    background:#f1f8e9;
+    padding:20px;
+    border-left:5px solid #43a047;
+}
+
+/* Tabela */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#2e7d32;
+    color:white;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+table tr:nth-child(even){
+    background:#f4f4f4;
+}
+
+/* Destaque */
+
+.destaque{
+    margin-top:25px;
+    background:#c8e6c9;
+    padding:20px;
+    border-radius:10px;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* Rodapé */
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Responsivo */
+
+@media(max-width:768px){
+
+.banner h1{
+    font-size:2.5rem;
+}
+
+.banner p{
+    font-size:1.1rem;
+}
+
+section{
+    padding:20px;
+}
+
+}
